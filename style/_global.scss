@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+//Colors
+$primary__DRed: #ce9696;
+$primary__SRed: #f96161;
+$neutral__DGray: #403939;
+
+//Font
+$universal__Font: 'Josefin Sans', sans-serif;
+
+body{
+    background-image: url("/Talleres/BaseApparel/images/fondo_body.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .container{
+    width: 60%;
+    max-width: 1800px;
+    max-height: 1500px;
+    box-shadow: 0 0 5px #2b2a2a9f;
+    margin: 8.5% auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "header    img"
+    "header    img"
+    "header    img";
+  }
+  .container >div{
+    background-color: hsla(24, 43%, 53%, 0.486);
+    border-radius: 4px;
+    color: #000000;
+  }
+  
+  .container .contenido{
+    grid-area: header;
+    background-image: url("/Talleres/BaseApparel/images/bg-pattern-desktop.svg");
+    background-repeat: repeat-x;
+    background-position: center;
+    width: 1000px;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .container .hero{
+    grid-area: img;
+    text-align: right;
+    display: flex;
+    min-height: 100px;
+    align-items: right;
+    justify-content: right;
+  }
+
+.text1{
+  text-transform: uppercase;
+  font-size: 75px;
+  font-family: $universal__Font;
+  display: flex;
+  padding: 0%;
+  margin: 0%;
+  text-align: right;
+  font-weight: lighter;
+  color: $primary__DRed;
+}
+
+.text2{
+    text-transform: uppercase;
+    font-size: 75px;
+    font-family: $universal__Font;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    text-align: right;
+    font-weight: bolder;
+    color: $neutral__DGray;
+    letter-spacing: 0.2em;
+
+}
+p {
+    font-size: 16px;
+    line-height: 1.8em;
+}
